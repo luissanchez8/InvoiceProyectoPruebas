@@ -82,9 +82,9 @@
                 :to="item.link"
                 :class="[
                   hasActiveUrl(item.link)
-                    ? 'text-primary-500 border-primary-500 bg-gray-100 '
-                    : 'text-black',
-                  'cursor-pointer px-0 pl-4 py-3 border-transparent flex items-center border-l-4 border-solid text-sm not-italic font-medium',
+                    ? 'bg-[#38d587] text-[#070322] border-[#38d587]'
+                    : 'text-white border-transparent hover:bg-white/10 hover:text-white',
+                  'cursor-pointer px-0 pl-6 py-3 group flex items-center border-l-4 border-solid text-sm not-italic font-medium transition-colors',
                 ]"
                 @click="globalStore.setSidebarVisibility(false)"
               >
