@@ -12,9 +12,9 @@
       px-4
       py-3
       md:h-16 md:px-8
-      bg-gradient-to-r
-      from-primary-500
-      to-primary-400
+      bg-white
+      border-b
+      border-gray-200
     "
   >
     <router-link
@@ -34,7 +34,7 @@
       "
     >
       <img v-if="adminLogo" :src="adminLogo" class="h-6" />
-      <MainLogo v-else class="h-6" light-color="white" dark-color="white" />
+      <MainLogo v-else class="h-6" />
     </router-link>
 
     <!-- toggle button-->
@@ -68,19 +68,14 @@
           <template #activator>
             <div
               class="
-                flex
-                items-center
-                justify-center
-                w-8
-                h-8
-                ml-2
-                text-sm text-black
-                bg-white
-                rounded
-                md:h-9 md:w-9
+                flex items-center justify-center
+                w-10 h-10 ml-2
+                rounded-lg
+                bg-[#38d587] hover:bg-[#2fc57c]
+                text-[#070322]
               "
             >
-              <BaseIcon name="PlusIcon" class="w-5 h-5 text-gray-600" />
+              <BaseIcon name="PlusIcon" class="w-5 h-5 text-[#070322]" />
             </div>
           </template>
 
