@@ -135,9 +135,9 @@
         :to="item.link"
         :class="[
           hasActiveUrl(item.link)
-            ? 'bg-[#38d587] text-[#070322] border-[#38d587] '
-            : 'text-white border-transparent',
-          'cursor-pointer px-0 pl-6 hover:bg-white/5 py-3 group flex items-center border-l-4 border-solid text-sm not-italic font-medium',
+            ? 'bg-[#38d587] text-[#070322] border-[#38d587]'
+            : 'text-white border-transparent hover:bg-white/10 hover:text-white',
+          'cursor-pointer px-0 pl-6 py-3 group flex items-center border-l-4 border-solid text-sm not-italic font-medium transition-colors',
         ]"
       >
         <BaseIcon
