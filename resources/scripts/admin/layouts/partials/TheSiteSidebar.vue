@@ -118,8 +118,7 @@
       h-screen
       pb-32
       overflow-y-auto
-      bg-white
-      border-r border-gray-200 border-solid
+      bg-[#070322]
       xl:w-64
       md:fixed md:flex md:flex-col md:inset-y-0
       pt-16
@@ -136,17 +135,17 @@
         :to="item.link"
         :class="[
           hasActiveUrl(item.link)
-            ? 'text-primary-500 border-primary-500 bg-gray-100 '
-            : 'text-black',
-          'cursor-pointer px-0 pl-6 hover:bg-gray-50 py-3 group flex items-center border-l-4 border-solid text-sm not-italic font-medium',
+            ? 'bg-[#38d587] text-[#070322] border-[#38d587] '
+            : 'text-white border-transparent',
+          'cursor-pointer px-0 pl-6 hover:bg-white/5 py-3 group flex items-center border-l-4 border-solid text-sm not-italic font-medium',
         ]"
       >
         <BaseIcon
           :name="item.icon"
           :class="[
             hasActiveUrl(item.link)
-              ? 'text-primary-500 group-hover:text-primary-500 '
-              : 'text-gray-400 group-hover:text-black',
+              ? 'text-[#070322] '
+              : 'text-white/70 group-hover:text-white',
             'mr-4 shrink-0 h-5 w-5 ',
           ]"
         />
