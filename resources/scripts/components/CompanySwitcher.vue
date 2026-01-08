@@ -11,11 +11,11 @@
         h-8
         md:h-9
         ml-2
-        text-sm text-white
-        bg-white
-        rounded
+        text-sm
+        rounded-lg
         cursor-pointer
-        bg-opacity-20
+        bg-[#38d587] hover:bg-[#2fc57c]
+        text-[#070322]
       "
       @click="isShow = !isShow"
     >
@@ -25,7 +25,7 @@
       >
         {{ companyStore.selectedCompany.name }}
       </span>
-      <BaseIcon name="ChevronDownIcon" class="h-5 ml-1 text-white" />
+    <BaseIcon name="ChevronDownIcon" class="h-5 ml-1 text-[#070322]" />
     </div>
 
     <transition
