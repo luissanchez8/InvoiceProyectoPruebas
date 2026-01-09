@@ -24,16 +24,11 @@
         {{ label }}
       </span>
     </div>
-    <div class="flex items-center">
-      <component :is="iconComponent" class="w-10 h-10 xl:w-12 xl:h-12" />
-    </div>
   </router-link>
 
   <StatsCardPlaceholder v-else-if="large" />
-
   <StatsCardSmPlaceholder v-else />
 </template>
-
 
 <script setup>
 import StatsCardPlaceholder from './DashboardStatsPlaceholder.vue'
@@ -42,7 +37,8 @@ import StatsCardSmPlaceholder from './DashboardStatsSmPlaceholder.vue'
 defineProps({
   iconComponent: {
     type: Object,
-    required: true,
+    required: false,
+    default: null,
   },
   loading: {
     type: Boolean,
